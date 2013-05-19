@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>@Page.Title</title>
+@*todo: add content to the meta tags*@
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Satisfy|Yanone+Kaffeesatz:300,400|Open+Sans" rel="stylesheet" type="text/css" />
+<link href="styles\default.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="scripts\jquery-1.7.1.min.js"></script>
+    @RenderSection("header", false);
+<!--[if lte IE 7]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="wrapper-bgtop">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="/">Neha Mandhani</a></h1>
+				<p>Live more fully – one breath at a time</p>
+			</div>
+		</div>
+		<div id="menu" class="container">
+			<ul>
+				<li id="menu1" class="menu"><a href="aboutme.cshtml" accesskey="1" title="About Me">About Me</a></li>
+				<li id="menu2"><a href="underconstruction.cshtml" accesskey="2" title="Yoga classes">Yoga classes</a></li>
+                <li id="menu3"><a href="underconstruction.cshtml" accesskey="3" title="Events">Events</a></li>
+				<li id="menu4"><a href="underconstruction.cshtml" accesskey="4" title="Impact">Impact</a></li>
+				<li id="menu5"><a href="underconstruction.cshtml" accesskey="5" title="Blog">Blog</a></li>
+			</ul>
+		</div>
+        @RenderBody();
+	</div>
+</div>
+<div id="footer-wrapper">
+	<div id="footer-content">
+		<div id="footer-content-bgbtop">
+			<div>
+				<h2 class="title">Connect</h2>
+			</div>
+			<div id="footer-contact">
+			    <ul class="list-style1">
+				    <li>Email Neha at neha@nehamandhani.com or connect on social networks below.</a></li>
+			    </ul>
+                <ul>
+				    <li class="socialize"><a class="facebook" href="www.facebook.com" target="_blank"></a></li>
+				    <li class="socialize"><a class="twitter" href="http://twitter.com/mandhanin" target="_blank"></a></li>
+@*                    <li class="socialize google"><a href="www.plus.google.com" target="_blank"></a></li>*@
+				    <li class="socialize"><a class="linkedin" href="http://linkedin.com" target="_blank"></a></li>
+
+			    </ul>
+			</div>
+		</div>
+		<div id="footer-content-bgbbtm"></div>
+	</div>
+	<div id="footer">
+		<p><a href="aboutme.cshtml">About Me</a> | Yoga Classes | Events | Impact | Blog | Credits | Copyright (c) 2013 Neha Mandhani</p>
+	</div>
+</div>
+</body>
+</html>
